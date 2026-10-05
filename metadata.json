@@ -1,0 +1,6 @@
+{
+  "name": "RetroTube",
+  "description": "Nostalgic video platform with smoother interface, fast variable playback speeds, and high-resolution YouTube streaming.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

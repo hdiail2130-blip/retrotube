@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="tubeGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff3333"/>
+      <stop offset="50%" stop-color="#cc181e"/>
+      <stop offset="100%" stop-color="#800a0d"/>
+    </linearGradient>
+    <linearGradient id="tubeShine" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.05"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <!-- Background Glow -->
+  <rect width="512" height="512" rx="96" fill="#181818"/>
+  <!-- TV Tube Screen -->
+  <g filter="url(#shadow)">
+    <rect x="56" y="80" width="400" height="352" rx="88" fill="url(#tubeGlow)" stroke="#4a0507" stroke-width="8"/>
+    <!-- Glass Highlight -->
+    <path d="M 72 100 Q 256 100 440 100 Q 440 220 256 220 Q 72 220 72 100 Z" fill="url(#tubeShine)"/>
+    <!-- Play Triangle -->
+    <polygon points="216,180 216,332 344,256" fill="#ffffff"/>
+  </g>
+</svg>
